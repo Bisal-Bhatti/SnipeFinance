@@ -1,0 +1,107 @@
+
+@import '../../styles'
+
+
+.fullWithBox
+    background-color: $backgroundColor
+    height: 100vh
+    
+    
+.FormBox
+    display: flex
+    justify-content:center
+    align-items: center
+    // border: 1px solid red
+    width: 500px
+    padding: 30px 20px
+    border-radius: 10px
+    background-color: $frontColor
+    box-shadow: 0px 0px 10px 10px rgba(0,0 ,0 ,0.08 )
+    form
+        width: 100%
+
+        
+        
+        label 
+            color : $selctedColor
+            font-family: $mainFonts
+            font-weight: 400
+        
+        input 
+            font-family: $mainFonts
+            font-weight: 300
+            color : $whiteColor
+            padding: 12px 
+            width : 100%
+
+           
+    
+    .formTitle
+            text-align: center
+            color: $whiteColor
+            font-family: $mainFonts
+            font-weight: 500
+            font-size: 25px
+            text-transform: uppercase
+    
+    .buttonsBOx
+        display: flex
+        justify-content: space-between
+        align-content: center
+        // flex-direction: column
+
+        button
+            min-width: 200px
+            max-width: 200px
+            display: flex
+            justify-content: center
+            align-content: center
+
+        p
+            font-family: $mainFonts
+            color: $whiteColor
+
+
+    .ErroHandler
+        p
+            color : red
+            font-family: $mainFonts
+            text-align:  center
+            font-weight: 300
+            text-transform: uppercase
+       
+
+    .css-sje21u-MuiInputBase-root-MuiInput-root:before
+        border-bottom: 1px solid gray
+    .css-sje21u-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled):before 
+        border-bottom: 2px solid gray
+
+
+    .css-1tcs2i1-MuiInputBase-root-MuiInput-root
+        width: 100%
+    
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 550px)
+
+    .fullWithBox
+        height: 100%
+
+    .FormBox
+        width: 95%
+
+        .buttonsBOx
+            flex-direction: column
+            
+            p
+                margin: 20px 0px
+
+
+    
